@@ -1,6 +1,5 @@
 # 1. 创建前端环境
 
-
 sudo yum install -y nodejs npm
 node -v
 npm -v
@@ -13,28 +12,45 @@ npx tailwindcss init -p
 npm install cors
 npm install react-scripts@latest
 
-
-
-
-
 # 2. 准备文件
 
-
 my-react-app/
+
+
 ├── frontend/
+
+
 │ ├── public/
+
+
 │ │ ├── index.html
+
+
 │ ├── src/
+
+
 │ │ ├── App.js
+
+
 │ │ ├── App.css
+
+
 │ │ ├── index.js
+
+
 │ │ ├── index.css
+
+
 │ ├── tailwind.config.js
+
+
 │ ├── postcss.config.js
+
+
 │ └── ...
+
+
 └── package.json
-
-
 
 
 
@@ -48,10 +64,6 @@ source venv/bin/activate&#x20;
 
 代码里添加：CORS(app, resources={r"/chat": {"origins": "http://localhost:3000" } } )
 
-
-
-
-
 # 4. 运行
 
 后台挂起：
@@ -61,8 +73,6 @@ PORT=8087 npm start
 chmod +x start_npm.sh&#x20;
 
 nohup ./start_npm.sh &
-
-
 
 Win配置
 
@@ -76,9 +86,6 @@ Win配置
 
 * 安装组件：npm install lucide-react tailwindcss postcss autoprefixer
 
-
-
 # 5. 效果图
 
 ![](README-UI_md_files/59cf8b80-9a80-11ef-a6dc-eb3472214bef.jpeg?v=1&type=image)
-
